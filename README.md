@@ -26,17 +26,7 @@ Setup database
 
 ```
 mysql -p
-```
-
-<br>
-
-```
 use test; 
-```
-
-<br>
-
-```
 create table tabela1 (id int AUTO_INCREMENT not null primary key,imie TEXT,nazwisko TEXT);
 ```
 
