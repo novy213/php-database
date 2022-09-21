@@ -1,14 +1,10 @@
 # Install <br>
 Docker image setup<br>
-
-
 ```
 docker build -f Dockerfile -t phpdb .. 
 ```
 <br>
-
 Containers run
-
 ```
 docker-compose up
 ```
@@ -21,7 +17,11 @@ winpty docker exec -it php-database-db-1 bash
 Setup database
 ```
 mysql -p <br>
+```
+```
 use test; <br>
+```
+```
 create table tabela1 (id int AUTO_INCREMENT not null primary key,imie TEXT,nazwisko TEXT);<br>
 ```
 
