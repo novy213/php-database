@@ -12,7 +12,7 @@
     <a href="edit.php"style="--clr:#DB4DBC;"><span>Edit</span>
         <i></i>
     </a>
-<a href="login.php?akcja=wyloguj"style="--clr:#EDE861;"><span>Wyloguj</span>
+<a href="login.php?akcja=wyloguj"style="--clr:#EDE861;"><span>Logout</span>
         <i></i>
     </a>
 <style>
@@ -159,16 +159,16 @@ input[type=submit]:hover{
     <br> <br>
     <div class="inputBox">
         <input type="text" name="imie" required="required">
-        <span>Imie</span>
+        <span>Name</span>
     </div>
 <br>
     <div class="inputBox">
         <input type="text" name="naz" required="required">
-        <span>Nazwisko</span>
+        <span>Last name</span>
     </div>
 <br><br>
 <br><br>
-<input type="submit" name="submit" value="Wyślij">
+<input type="submit" name="submit" value="Next">
 </form>
 <?php
 include 'db.php';
@@ -182,7 +182,7 @@ if(isset($_POST['submit'])){
            echo $conn->error;
           die();
        }
-       echo "wykonano!";
+       echo "Done!";
        $conn->close();
     } 
 ?>

@@ -13,7 +13,7 @@
     <a href="edit.php"style="--clr:#DB4DBC;"><span>Edit</span>
         <i></i>
     </a>
-<a href="login.php?akcja=wyloguj"style="--clr:#EDE861;"><span>Wyloguj</span>
+<a href="login.php?akcja=wyloguj"style="--clr:#EDE861;"><span>Logout</span>
         <i></i>
     </a>
 <style>
@@ -167,14 +167,14 @@ include 'db.php';
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
         $z++;
-        echo "<b>id:</b> " . $row["id"]. " <b>Imie:</b> " . $row["imie"]. " <b>Nazwisko: </b>" . $row["nazwisko"].
+        echo "<b>id:</b> " . $row["id"]. " <b>Name:</b> " . $row["imie"]. " <b>Last name: </b>" . $row["nazwisko"].
         "<input type='checkbox' name='todelete[]' value=".$row["id"].">
         <br>";
         $tab[$z]=$row['id'];
     }
   ?>
     <br>
-    <input type="submit" name="submit2" value="Usuń">
+    <input type="submit" name="submit2" value="Delete">
 </form>
         <?php
 }   
@@ -194,7 +194,7 @@ if ($conn->connect_error) {
 
 $sql = "delete from tabela1 where id=$wybrane";
 $result = $conn->query($sql);
-echo 'wykonano!';
+echo 'Done!';
 $conn->close();
 
 }

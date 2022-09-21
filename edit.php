@@ -13,7 +13,7 @@
     <a href="edit.php"style="--clr:#DB4DBC;"><span>Edit</span>
         <i></i>
     </a>
-<a href="login.php?akcja=wyloguj"style="--clr:#EDE861;"><span>Wyloguj</span>
+<a href="login.php?akcja=wyloguj"style="--clr:#EDE861;"><span>Logout</span>
         <i></i>
     </a>
 <style>
@@ -176,7 +176,7 @@ include 'db.php';
     }
   ?>
     <br>
-    <input type="submit" name="submit2" value="Dalej">
+    <input type="submit" name="submit2" value="Next">
 </form>
         <?php
 }   
@@ -195,14 +195,14 @@ include 'db.php';
 <form method="post">
     <div class="inputBox">
         <input type="text" name="imie2" required="required" value="<?php echo htmlspecialchars($imie1) ?>">
-        <span>Imie</span>
+        <span>Name</span>
     </div>
     <div class="inputBox">
         <input type="text" name="naz2" required="required" value="<?php echo htmlspecialchars($naz1) ?>">
-        <span>Nazwisko</span>
+        <span>Last name</span>
     </div>
     <input type="hidden" name="ide" value="<?php echo htmlspecialchars($wybrane) ?>">
-    <input type="submit" name="sub2" value="Edytuj">
+    <input type="submit" name="sub2" value="Edit">
 </form>
 <?php
 }
@@ -212,7 +212,7 @@ $imie3 = $_POST['imie2'];
 $id3 = $_POST['ide'];
 $sql = "update tabela1 set imie='$imie3',nazwisko='$naz3' where id=$id3";
 $result = $conn->query($sql);
-echo 'wykonano!';
+echo 'Done!';
 $conn->close();
 }
    

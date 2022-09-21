@@ -12,7 +12,7 @@
     <a href="edit.php"style="--clr:#DB4DBC;"><span>Edit</span>
         <i></i>
     </a>
-    <a href="login.php?akcja=wyloguj"style="--clr:#EDE861;"><span>Wyloguj</span>
+    <a href="login.php?akcja=wyloguj"style="--clr:#EDE861;"><span>Logout</span>
         <i></i>
     </a>
 <style>
@@ -158,7 +158,7 @@ input[type=submit]:hover{
 <form method="post">
     <br> <br>
 <br><br>
-<input type="submit" name="submit" value="Pokaż">
+<input type="submit" name="submit" value="Show">
 </form>
 
 <?php

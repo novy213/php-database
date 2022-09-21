@@ -86,10 +86,10 @@ input[type=submit]:hover{
     <br>
     <div class="inputBox">
         <input type="password" name="haslo" required="required">
-        <span>Hasło</span>
+        <span>Password</span>
     </div>
     <br>
-    <input type="submit" value="Zaloguj">
+    <input type="submit" value="Login">
 </form>
 <?php
 }
