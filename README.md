@@ -44,7 +44,7 @@ $password = "admin";
 $dbname = "test";
 ```
 
-Now u can open browser and search: 
+Now u can open browser and search
 
 ```
 192.168.0.127:8085/login.php
