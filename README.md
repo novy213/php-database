@@ -1,4 +1,4 @@
-<h1 align=center>Install</h1>
+#Install
 `docker build -f Dockerfile -t phpdb .. `<br>
 docker-compose up <br>
 winpty docker exec -it php-database-db-1 bash <br>
