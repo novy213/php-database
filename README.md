@@ -1,4 +1,4 @@
-#Install <br>
+# Install <br>
 Docker image setup<br>
 ```docker build -f Dockerfile -t phpdb .. ```<br>
 docker-compose up <br>
