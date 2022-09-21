@@ -14,12 +14,9 @@ services:
     ports:
         - 33007:3306
     environment:
-      MYSQL_DATABASE: testowa
-      MYSQL_USER: jakub
-      MYSQL_PASSWORD: admin
+      MYSQL_DATABASE: test
       MYSQL_ROOT_PASSWORD: admin
     volumes:
       - db:/var/lib/mysql
-
 volumes:
   db:
