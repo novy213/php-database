@@ -1,6 +1,12 @@
 # Install <br>
 Docker image setup<br>
-```docker build -f Dockerfile -t phpdb .. ```<br>
+
+
+```
+docker build -f Dockerfile -t phpdb .. 
+```
+
+<br>
 docker-compose up <br>
 winpty docker exec -it php-database-db-1 bash <br>
 mysql -p <br>
