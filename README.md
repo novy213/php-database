@@ -42,6 +42,13 @@ create table tabela1 (id int AUTO_INCREMENT not null primary key,imie TEXT,nazwi
 
 <br>
 
-Now go to db.php.example, remove .example 
+Now go to db.php.example, remove .example extension and setup server info. <br>
 
+Recommended:
+```
+$servername = "php-database-db-1";
+$username = "root";
+$password = "admin";
+$dbname = "test";
+```
 192.168.0.127:8085/login.php
