@@ -1,3 +1,5 @@
+#Info
+A php application that connects to a database and executes simple sql queries.<br>
 # Install <br>
 Docker image setup<br>
 ```
